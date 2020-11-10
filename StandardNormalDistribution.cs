@@ -14,7 +14,11 @@ namespace _A.Properties
             Zlist.Add(0.04, 0.160);
             Zlist.Add(0.05, 0.199);
             Zlist.Add(0.06, 0.239);
-
+            Zlist.Add(0.07, 0.279);
+            Zlist.Add(0.08, 0.319);
+            Zlist.Add(0.09, 0.359);
+            Zlist.Add(0.10, 0.398);
+            Zlist.Add(0.11, 0.438);
         }
     }
 }
