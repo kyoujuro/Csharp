@@ -14,3 +14,12 @@ Class Shop
     Console.WriteLine(this.name + ":" + this.value);
   }
 }
+
+
+public class Part{
+  private string m_firstname
+  void setName(String name){
+    m_firstname = name;
+  }
+}
+    
