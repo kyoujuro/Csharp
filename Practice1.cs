@@ -29,7 +29,7 @@ public static void SelectSort<T>(T[] array) where T : IComparable<T>
     {
     int min = 1;
     for(int j = i + 1; j < array.Length; j++){
-      if(array[min].CompareTo(array[j] > 0)
+      if(array[min].CompareTo(array[j]) > 0)
       {
         min = j;
       }
