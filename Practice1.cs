@@ -22,4 +22,25 @@ public class Part{
     m_firstname = name;
   }
 }
-    
+
+public static void SelectSort<T>(T[] array) where T : IComparable<T>
+{
+  for(int i = 0; i < array.Length -1; i++)
+    {
+    int min = 1;
+    for(int j = i + 1; j < array.Length; j++){
+      if(array[min].CompareTo(array[j] > 0)
+      {
+        min = j;
+      }
+    }
+      Swap(ref array[min], ref array[i]);
+  }
+}
+
+public static void Swap<T>(ref T a, ref T b)
+{
+  var tmp = a;
+  a = b;
+  b = tmp;
+}
