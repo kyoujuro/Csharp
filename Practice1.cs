@@ -44,3 +44,36 @@ public static void Swap<T>(ref T a, ref T b)
   a = b;
   b = tmp;
 }
+
+public static void Delete(int ans)
+        {
+           
+            try
+            {
+                ans = 100 / ans;
+                DeletePageAndReferences(ans.ToString());
+           
+            }
+            catch (Exception e) {
+                logError(e);
+            }
+        }
+
+        private static void DeletePageAndReferences(string page)
+        {
+
+            Console.WriteLine("OK");
+        }
+
+        private static void logError(Exception e)
+        {
+            Console.WriteLine("NG");
+        }
+        public static void Main(string[] args)
+        {
+            
+            int ans = 0;
+            Delete(ans);
+            Console.WriteLine("Hello World!");
+        }
+
