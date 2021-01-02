@@ -26,3 +26,4 @@ namespace effective
 
 }
 /// static readonly を読み取り専用の値に使うのが良い
+/// var を用いて型推論で可読性を高める
