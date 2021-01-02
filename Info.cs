@@ -25,3 +25,4 @@ namespace effective
 
 
 }
+/// static readonly を読み取り専用の値に使うのが良い
