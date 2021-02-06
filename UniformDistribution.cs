@@ -4,6 +4,7 @@ namespace _A
 {
     class MainClass
     {
+        private int _total;
         public static void Main(string[] args)
         {
             Console.Write("Please enter the beginning of the interval.: ");
@@ -14,6 +15,8 @@ namespace _A
             double dis = (Math.Pow((end-start),2) / 12);
           
             Console.WriteLine("The uniform distribution: Average is {0}, Distributed is {1}", avg, dis);
+            
+            
         }
     }
 }
