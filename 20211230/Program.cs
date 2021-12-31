@@ -19,7 +19,8 @@ namespace SampleConsole
             var Hoge = new Hoge();
             Hoge.Foo();
             Console.WriteLine(Hoge.Circumference(30));
-
+            Console.WriteLine(Hoge.Relu(-4));
+            Console.WriteLine(Hoge.Relu(3));
         }
         static int HelloWorld(int num)
         {
@@ -30,13 +31,20 @@ namespace SampleConsole
     }
     class Hoge
     {
+        static string test = "hoge";
         public void Foo()
         {
-            Console.WriteLine("Foo");
+            Console.WriteLine("Foo " + test);
         }
         public static double Circumference(double radius)
         {
             return 2 * System.Math.PI * radius;
+        }
+        public int Relu(int x){
+            if(x < 0){
+                return 0;
+            }    
+            return x;
         }
     }
 }
