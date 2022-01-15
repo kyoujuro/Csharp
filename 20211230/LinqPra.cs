@@ -7,3 +7,4 @@ var hoge = new[]
     new { id = "e", num = 24},
 }
 var sum = hoge.Sum(x => x.num);
+Console.WriteLine(hoge.Average(x => x.num));
